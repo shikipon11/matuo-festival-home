@@ -1,358 +1,53 @@
-<!-- ========================= -->
-<!-- index.html -->
-<!-- ========================= -->
-
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
-
-  <meta charset="UTF-8">
-
-  <!-- スマホ対応 -->
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-
-  <!-- タイトル -->
-  <title>まつお祭</title>
-
-  <!-- Google Font -->
-  <link
-    rel="preconnect"
-    href="https://fonts.googleapis.com"
-  >
-
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  >
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap"
-    rel="stylesheet"
-  >
-
-  <!-- CSS -->
-  <link
-    rel="stylesheet"
-    href="style.css"
-  >
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>第69回松尾祭</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-  <!-- ========================= -->
-  <!-- ヘッダー -->
-  <!-- ========================= -->
-
-  <header class="site-header">
-
-    <!-- ロゴエリア -->
-    <div class="header-left">
-      <div class="logo-circle"></div>
-      <h1 class="site-title">まつお祭</h1>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo-area">
+      <img src="logo.png" alt="logo" class="logo">
+      <h1>第69回松尾祭</h1>
     </div>
 
-    <!-- ナビゲーション -->
-    <nav class="global-nav">
-      <a href="#about">概要</a>
-      <a href="#events">企画</a>
-      <a href="#news">お知らせ</a>
-      <a href="#access">アクセス</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">ホーム</a></li>
+        <li><a href="#">MAP</a></li>
+        <li><a href="#">企画一覧</a></li>
+        <li><a href="#">グッズ</a></li>
+        <li><a href="#">飲食メニュー</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+      </ul>
     </nav>
-
-    <!-- ハンバーガーボタン -->
-    <button class="menu-button" id="menuButton">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-
   </header>
 
-  <!-- ========================= -->
-  <!-- モバイルメニュー -->
-  <!-- ========================= -->
-
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="#about">概要</a>
-    <a href="#events">企画</a>
-    <a href="#news">お知らせ</a>
-    <a href="#access">アクセス</a>
-  </div>
-
-  <!-- ========================= -->
-  <!-- ヒーロー -->
-  <!-- ========================= -->
-
-  <section class="hero-section">
-
-    <!-- 背景画像 -->
-    <img
-      src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?q=80&w=1600&auto=format&fit=crop"
-      alt="文化祭イメージ"
-      class="hero-image"
-    >
-
-    <!-- オーバーレイ -->
-    <div class="hero-overlay"></div>
-
-    <!-- テキスト -->
-    <div class="hero-content">
-
-      <p class="hero-subtitle">MATSUO FESTIVAL 2026</p>
-
-      <h2 class="hero-title">
-        未来へつながる<br>
-        文化祭
-      </h2>
-
-      <p class="hero-description">
-        楽しさと創造が交わる特別な一日。
-      </p>
-
-      <a
-        href="#events"
-        class="hero-button"
-      >
-        企画を見る
-      </a>
-
+  <!-- Hero -->
+  <section class="hero">
+    <div class="overlay">
+      <h2>第69回松尾祭</h2>
+      <p>~Climb-Max!!~</p>
     </div>
-
   </section>
 
-  <!-- ========================= -->
-  <!-- 概要 -->
-  <!-- ========================= -->
+  <!-- Accordion -->
+  <section class="accordion-section">
 
-  <section
-    class="section"
-    id="about"
-  >
-
-    <div class="section-header">
-      <p class="section-subtitle">ABOUT</p>
-      <h2 class="section-title">文化祭について</h2>
-    </div>
-
-    <div class="about-grid">
-
-      <div class="about-card">
-        <h3>開催日時</h3>
+    <div class="accordion-item">
+      <button class="accordion-button">スローガン</button>
+      <div class="accordion-content">
         <p>
-          2026年9月12日(土)<br>
-          9:00〜16:00
+          皆がもっと感情や体験には「頂点」があると思います。<br>
+          全力でその頂点へと登り詰められるような松尾祭にしたい。
         </p>
       </div>
-
-      <div class="about-card">
-        <h3>場所</h3>
-        <p>
-          松尾高校<br>
-          教室棟・体育館
-        </p>
-      </div>
-
-      <div class="about-card">
-        <h3>テーマ</h3>
-        <p>
-          「CONNECT」<br>
-          つながる文化祭
-        </p>
-      </div>
-
     </div>
 
-  </section>
-
-  <!-- ========================= -->
-  <!-- 企画一覧 -->
-  <!-- ========================= -->
-
-  <section
-    class="section gray-section"
-    id="events"
-  >
-
-    <div class="section-header">
-      <p class="section-subtitle">EVENTS</p>
-      <h2 class="section-title">企画一覧</h2>
-    </div>
-
-    <!-- フィルターボタン -->
-    <div class="filter-buttons">
-
-      <button
-        class="filter-button active"
-        data-category="all"
-      >
-        すべて
-      </button>
-
-      <button
-        class="filter-button"
-        data-category="展示"
-      >
-        展示
-      </button>
-
-      <button
-        class="filter-button"
-        data-category="体験"
-      >
-        体験
-      </button>
-
-      <button
-        class="filter-button"
-        data-category="飲食"
-      >
-        飲食
-      </button>
-
-    </div>
-
-    <!-- カード一覧 -->
-    <div class="event-grid" id="eventGrid"></div>
-
-  </section>
-
-  <!-- ========================= -->
-  <!-- お知らせ -->
-  <!-- ========================= -->
-
-  <section
-    class="section"
-    id="news"
-  >
-
-    <div class="section-header">
-      <p class="section-subtitle">NEWS</p>
-      <h2 class="section-title">お知らせ</h2>
-    </div>
-
-    <div class="news-list">
-
-      <article class="news-item">
-        <span class="news-date">2026.08.01</span>
-        <p>文化祭サイトを公開しました。</p>
-      </article>
-
-      <article class="news-item">
-        <span class="news-date">2026.08.10</span>
-        <p>企画一覧を更新しました。</p>
-      </article>
-
-      <article class="news-item">
-        <span class="news-date">2026.08.20</span>
-        <p>タイムテーブルを公開しました。</p>
-      </article>
-
-    </div>
-
-  </section>
-
-  <!-- ========================= -->
-  <!-- アクセス -->
-  <!-- ========================= -->
-
-  <section
-    class="section gray-section"
-    id="access"
-  >
-
-    <div class="section-header">
-      <p class="section-subtitle">ACCESS</p>
-      <h2 class="section-title">アクセス</h2>
-    </div>
-
-    <div class="access-container">
-
-      <!-- 地図 -->
-      <div class="map-box">
-        MAP
-      </div>
-
-      <!-- 情報 -->
-      <div class="access-info">
-
-        <h3>松尾高校</h3>
-
-        <p>
-          長野県○○市○○1234
-        </p>
-
-        <p>
-          JR○○駅から徒歩10分
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- ========================= -->
-  <!-- フッター -->
-  <!-- ========================= -->
-
-  <footer class="site-footer">
-
-    <p>
-      © 2026 MATSUO FESTIVAL
-    </p>
-
-  </footer>
-
-  <!-- ========================= -->
-  <!-- モーダル -->
-  <!-- ========================= -->
-
-  <div class="modal" id="modal">
-
-    <div class="modal-content">
-
-      <!-- 閉じるボタン -->
-      <button
-        class="close-button"
-        id="closeButton"
-      >
-        ×
-      </button>
-
-      <!-- モーダル画像 -->
-      <img
-        id="modalImage"
-        class="modal-image"
-        src=""
-        alt=""
-      >
-
-      <!-- モーダル本文 -->
-      <div class="modal-body">
-
-        <span id="modalCategory" class="modal-tag"></span>
-
-        <h2 id="modalTitle"></h2>
-
-        <p id="modalPlace"></p>
-
-        <p id="modalDescription"></p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-  <!-- JavaScript -->
-  <script src="script.js"></script>
-
-</body>
-
+    <div class="accordion-item">
+      <button class="accordion-button">テーマソング</button>
 </html>
