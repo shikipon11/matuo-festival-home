@@ -1,4 +1,36 @@
+```
+
+---
+
+# CSS
+
+```css
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Hiragino Sans", sans-serif;
+  background: #eef5f5;
+  color: #222;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
+}
+
+.logo-area {
+  display: flex;
   align-items: center;
   gap: 10px;
 }
@@ -74,7 +106,54 @@
   line-height: 2;
   color: #666600;
 }
-* {
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.menu-btn {
+  background: #c83a2e;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 16px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.menu-btn.white {
+  background: white;
+  border: 2px solid #c83a2e;
+  color: #c83a2e;
+}
+
+.character-section {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.character-section h3 {
+  font-size: 36px;
+  color: #c83a2e;
+  margin-bottom: 30px;
+}
+
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.character-grid img {
+  width: 100%;
+}
+
 .gallery {
   max-width: 1200px;
   margin: 60px auto;
